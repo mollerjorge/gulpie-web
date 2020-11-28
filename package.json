@@ -1,0 +1,23 @@
+{
+  "name": "tailwind-from-scratch-course",
+  "version": "1.0.0",
+  "description": "Tailwind from scratch course",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "watch": "postcss -w css/tailwind.css -o public/build/tailwind.css && live-server",
+    "live": "live-server",
+    "develop": "npm-run-all --parallel live watch"
+  },
+  "author": "Jorge Moller",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.0.4",
+    "postcss": "^8.1.10",
+    "postcss-cli": "^8.3.0",
+    "tailwindcss": "^2.0.1"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
