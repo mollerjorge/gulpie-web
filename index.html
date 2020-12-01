@@ -1,117 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind from scratch course</title>
 
-    <link rel="stylesheet" href="./public/build/tailwind.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind from scratch course</title>
 
-    <script
-      src="https://unpkg.com/react@17/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
-      crossorigin
-    ></script>
-  </head>
+  <link rel="stylesheet" href="./public/build/tailwind.css" />
 
-  <body>
-    <main class="container m-auto mt-10">
-      <!-- Colors -->
-      <section id="colors">
-        <h2 class="text-blue-500 text-center text-lg uppercase font-bold tracking-wide">
-          Colors
-        </h2>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600:800&display=swap"
+    rel="stylesheet">
+</head>
 
-        <div class="flex justify-center gap-16">
-          <!-- Primary Colors Start-->
-          <div class="mt-8">
-            <h3 class="text-gray-800 font-bold uppercase tracking-wide text-sm">
-              Primary Colors
-            </h3>
-            <hr class="mt-2" />
+<body>
+  <main class="container m-auto mt-10">
+    <!-- Colors -->
+    <section id="colors">
+      <h2 class="text-blue-500 text-lg uppercase font-bold tracking-wide">
+        Colors
+      </h2>
 
-            <div class="mt-6 flex gap-6">
-              <div class="w-32 h-40 bg-blue-700 rounded-lg"></div>
+      <div class="flex gap-16">
+        <!-- Primary Colors Start-->
+        <div class="mt-8">
+          <h3 class="text-gray-800 font-bold uppercase tracking-wide text-sm">
+            Primary Colors
+          </h3>
+          <hr class="mt-2" />
 
-              <div class="w-32 h-40 bg-blue-500 rounded-lg"></div>
+          <div class="mt-6 flex gap-6">
+            <div class="w-32 h-40 bg-blue-700 rounded-lg"></div>
 
-              <div class="w-32 h-40 bg-blue-200 rounded-lg"></div>
-            </div>
+            <div class="w-32 h-40 bg-blue-500 rounded-lg"></div>
+
+            <div class="w-32 h-40 bg-blue-200 rounded-lg"></div>
           </div>
-          <!-- Primary Colors End -->
+        </div>
+        <!-- Primary Colors End -->
 
-          <!-- Semantic Colors Start-->
-          <div class="mt-8">
-            <h3 class="text-gray-800 font-bold uppercase tracking-wide text-sm">
-              Semantic Colors
-            </h3>
-            <hr class="mt-2" />
+        <!-- Semantic Colors Start-->
+        <div class="mt-8">
+          <h3 class="text-gray-800 font-bold uppercase tracking-wide text-sm">
+            Semantic Colors
+          </h3>
+          <hr class="mt-2" />
 
-            <!-- Green -->
-            <div class="mt-6 flex gap-6">
-              <div class="w-32 bg-green-700 h-40 rounded-lg"></div>
+          <!-- Green -->
+          <div class="mt-6 flex gap-6">
+            <div class="w-32 bg-green-700 h-40 rounded-lg"></div>
 
-              <div class="w-32 bg-green-500 h-40 rounded-lg"></div>
+            <div class="w-32 bg-green-500 h-40 rounded-lg"></div>
 
-              <div class="w-32 bg-green-100 h-40 rounded-lg"></div>
-            </div>
+            <div class="w-32 bg-green-100 h-40 rounded-lg"></div>
+          </div>
 
-            <!-- Yellow -->
-            <div class="mt-6 flex gap-6">
-              <div class="w-32 bg-yellow-700 h-40 rounded-lg"></div>
+          <!-- Yellow -->
+          <div class="mt-6 flex gap-6">
+            <div class="w-32 bg-yellow-700 h-40 rounded-lg"></div>
 
-              <div class="w-32 bg-yellow-500 h-40 rounded-lg"></div>
+            <div class="w-32 bg-yellow-500 h-40 rounded-lg"></div>
 
-              <div class="w-32 bg-yellow-100 h-40 rounded-lg"></div>
-            </div>
+            <div class="w-32 bg-yellow-100 h-40 rounded-lg"></div>
+          </div>
 
-            <!-- Red -->
-            <div class="mt-6 flex gap-6">
-              <div class="w-32 bg-red-700 h-40 rounded-lg"></div>
+          <!-- Red -->
+          <div class="mt-6 flex gap-6">
+            <div class="w-32 bg-red-700 h-40 rounded-lg"></div>
 
-              <div class="w-32 bg-red-500 h-40 rounded-lg"></div>
+            <div class="w-32 bg-red-500 h-40 rounded-lg"></div>
 
-              <div class="w-32 bg-red-100 h-40 rounded-lg"></div>
-            </div>
+            <div class="w-32 bg-red-100 h-40 rounded-lg"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-16">
+        <div class="mt-8">
+          <h3 class="text-gray-800 font-bold uppercase tracking-wide text-sm">
+            Text color
+          </h3>
+          <hr class="mt-2" />
+
+          <div class="mt-6 flex gap-6">
+            <div class="w-32 h-40 bg-black-dark rounded-lg"></div>
+
+            <div class="w-32 h-40 bg-black rounded-lg"></div>
+
+            <div class="w-32 h-40 bg-black-light rounded-lg"></div>
           </div>
         </div>
 
-        <div class="flex justify-center gap-16">
-          <div class="mt-8">
-            <h3 class="text-gray-800 font-bold uppercase tracking-wide text-sm">
-              Text color
-            </h3>
-            <hr class="mt-2" />
+        <div class="mt-8">
+          <h3 class="text-gray-800 font-bold uppercase tracking-wide text-sm">
+            Background colors
+          </h3>
+          <hr class="mt-2" />
 
-            <div class="mt-6 flex gap-6">
-              <div class="w-32 h-40 bg-gray-800 rounded-lg"></div>
+          <div class="mt-6 flex gap-6">
+            <div class="w-32 h-40 bg-white shadow rounded-lg"></div>
 
-              <div class="w-32 h-40 bg-gray-500 rounded-lg"></div>
-
-              <div class="w-32 h-40 bg-gray-400 rounded-lg"></div>
-            </div>
-          </div>
-
-          <div class="mt-8">
-            <h3 class="text-gray-800 font-bold uppercase tracking-wide text-sm">
-              Background colors
-            </h3>
-            <hr class="mt-2" />
-
-            <div class="mt-6 flex gap-6">
-              <div class="w-32 h-40 bg-white shadow rounded-lg"></div>
-
-              <div class="w-32 h-40 bg-gray-100 rounded-lg"></div>
-
-              <div class="w-32 h-40 bg-gray-200 rounded-lg"></div>
-            </div>
+            <div class="w-32 h-40 bg-gray-100 rounded-lg"></div>
           </div>
         </div>
-        <!-- Semantic Colors End -->
-      </section>
-    </main>
-  </body>
+      </div>
+      <!-- Semantic Colors End -->
+
+    </section>
+
+    <section id="typography" class="mt-20">
+      <h2 class="text-blue-500 text-lg uppercase font-bold tracking-wide mb-8">
+        Typography
+      </h2>
+
+      <h1 class="h1">Heading 1 <span class="text-gray-500 text-sm">72px</span> </h1>
+      <h2 class="h2">Heading 2 <span class="text-gray-500 text-sm">60px</span></h2>
+      <h3 class="h3">Heading 3 <span class="text-gray-500 text-sm">48px</span></h3>
+      <h4 class="h4">Heading 4 <span class="text-gray-500 text-sm">36px</span></h4>
+
+      <p class="p-md">Body Text <span class="text-gray-500 text-sm">20px</span></p>
+      <p class="p-sm">Small text <span class="text-gray-500 text-sm">18px</span></p>
+    </section>
+  </main>
+</body>
+
 </html>

@@ -1,0 +1,52 @@
+@layer base {
+  body {
+    @apply font-inter;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-black-dark font-bold leading-normal;
+  }
+
+  h1,
+  h2 {
+    @apply mb-6;
+  }
+
+  h3,
+  h4 {
+    @apply mb-4;
+  }
+
+  h1 {
+    @apply text-7xl;
+  }
+
+  h2 {
+    @apply text-5xl;
+  }
+
+  h3 {
+    @apply text-4xl;
+  }
+
+  h4 {
+    @apply text-xl;
+  }
+
+  p {
+    @apply text-black leading-8 mb-4;
+  }
+}
+
+@layer utilities {
+  .p-sm {
+    @apply text-lg;
+  }
+
+  .p-md {
+    @apply text-xl;
+  }
+}
