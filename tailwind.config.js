@@ -13,14 +13,21 @@ module.exports = {
           DEFAULT: '#858A8F',
           light: '#AAB0B7'
         }
+      },
+      borderRadius: {
+        medium: '0.312rem',
       }
+
     },
     fontFamily: {
       inter: 'Inter, sans-serif'
     }
   },
   variants: {
-    extend: {}
+    extend: {
+      opacity: ['disabled'],
+      pointerEvents: ['disabled']
+    }
   },
   plugins: []
 }
