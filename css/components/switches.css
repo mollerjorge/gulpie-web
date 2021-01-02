@@ -1,0 +1,29 @@
+@layer components { 
+  .switch > div:first-child {
+    @apply pl-4 pr-2 py-3 bg-blue-100 rounded-tl-full rounded-bl-full;
+  } 
+  .switch > div:last-child {
+    @apply pr-4 pl-2 py-3 bg-blue-100 rounded-tr-full rounded-br-full;
+  }
+  .switch input {
+    @apply hidden;
+  }
+  .switch label {
+    @apply flex items-center;
+  }
+  .switch svg {
+    @apply  w-4 h-5;
+  }
+  .switch svg:first-child {
+    @apply mr-2;
+  }
+  .switch svg:last-child {
+    @apply ml-2;
+  }
+  .switch label {
+    @apply text-blue-300 cursor-pointer;
+  }
+  .switch input:checked + label {
+    @apply text-blue-500;
+  }
+}

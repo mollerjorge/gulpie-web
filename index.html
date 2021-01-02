@@ -13,156 +13,60 @@
     rel="stylesheet">
 </head>
 
-<body class="m-4">
-  <main class="container m-auto mt-10">
-    <!-- Colors -->
-    <section id="colors">
-      <h2 class="text-blue-500 text-lg uppercase font-bold tracking-wide">
-        Colors
-      </h2>
-
-      <div class="flex gap-16">
-        <!-- Primary Colors Start-->
-        <div class="mt-8">
-          <h3 class="text-gray-800 font-bold uppercase tracking-wide text-sm">
-            Primary Colors
-          </h3>
-          <hr class="mt-2" />
-
-          <div class="mt-6 flex gap-6">
-            <div class="w-32 h-40 bg-blue-700 rounded-lg"></div>
-
-            <div class="w-32 h-40 bg-blue-500 rounded-lg"></div>
-
-            <div class="w-32 h-40 bg-blue-100 rounded-lg"></div>
-          </div>
-        </div>
-        <!-- Primary Colors End -->
-
-        <!-- Semantic Colors Start-->
-        <div class="mt-8">
-          <h3 class="text-gray-800 font-bold uppercase tracking-wide text-sm">
-            Semantic Colors
-          </h3>
-          <hr class="mt-2" />
-
-          <!-- Green -->
-          <div class="mt-6 flex gap-6">
-            <div class="w-32 bg-green-700 h-40 rounded-lg"></div>
-
-            <div class="w-32 bg-green-500 h-40 rounded-lg"></div>
-
-            <div class="w-32 bg-green-100 h-40 rounded-lg"></div>
-          </div>
-
-          <!-- Yellow -->
-          <div class="mt-6 flex gap-6">
-            <div class="w-32 bg-yellow-700 h-40 rounded-lg"></div>
-
-            <div class="w-32 bg-yellow-500 h-40 rounded-lg"></div>
-
-            <div class="w-32 bg-yellow-100 h-40 rounded-lg"></div>
-          </div>
-
-          <!-- Red -->
-          <div class="mt-6 flex gap-6">
-            <div class="w-32 bg-red-700 h-40 rounded-lg"></div>
-
-            <div class="w-32 bg-red-500 h-40 rounded-lg"></div>
-
-            <div class="w-32 bg-red-100 h-40 rounded-lg"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex gap-16">
-        <div class="mt-8">
-          <h3 class="text-gray-800 font-bold uppercase tracking-wide text-sm">
-            Text color
-          </h3>
-          <hr class="mt-2" />
-
-          <div class="mt-6 flex gap-6">
-            <div class="w-32 h-40 bg-black-dark rounded-lg"></div>
-
-            <div class="w-32 h-40 bg-black rounded-lg"></div>
-
-            <div class="w-32 h-40 bg-black-light rounded-lg"></div>
-          </div>
+<body>
+  <header>
+    <div class="container">
+      <div class="flex justify-between items-center h-20">
+        <div>
+          <a>
+            <img class="w-44" src="images/logo.svg" alt="logo" />
+          </a>
         </div>
 
-        <div class="mt-8">
-          <h3 class="text-gray-800 font-bold uppercase tracking-wide text-sm">
-            Background colors
-          </h3>
-          <hr class="mt-2" />
+        <nav>
+          <ul class="flex">
+            <li><a class="px-5 text-black font-medium transition hover:text-black-dark duration-300"
+                href="#">Home</a></li>
+            <li><a class="px-5 text-black font-medium transition hover:text-black-dark duration-300"
+                href="#">Product</a></li>
+            <li><a class="px-5 text-black font-medium transition hover:text-black-dark duration-300"
+                href="#">Blog</a></li>
+            <li><a class="px-5 text-black font-medium transition hover:text-black-dark duration-300"
+                href="#">Contact us</a> </li>
+          </ul>
+        </nav>
 
-          <div class="mt-6 flex gap-6">
-            <div class="w-32 h-40 bg-white shadow rounded-lg"></div>
+        <div class="switch flex">
+          <div>
+            <input id="light" checked type="radio" name="theme" value="light" />
 
-            <div class="w-32 h-40 bg-gray-100 rounded-lg"></div>
+            <label for="light">
+              <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                  clip-rule="evenodd" />
+              </svg>
+              Light
+            </label>
           </div>
+
+          <div>
+            <input id="dark" type="radio" name="theme" value="dark" />
+
+            <label for="dark">
+              Dark
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+              </svg>
+            </label>
+          </div>
+
+
         </div>
+
       </div>
-      <!-- Semantic Colors End -->
-
-    </section>
-
-    <section id="typography" class="mt-20">
-      <h2 class="text-blue-500 text-lg uppercase font-bold tracking-wide mb-8">
-        Typography
-      </h2>
-
-      <h1 class="h1">Heading 1 <span class="text-gray-500 text-sm">72px</span> </h1>
-      <h2 class="h2">Heading 2 <span class="text-gray-500 text-sm">60px</span></h2>
-      <h3 class="h3">Heading 3 <span class="text-gray-500 text-sm">48px</span></h3>
-      <h4 class="h4">Heading 4 <span class="text-gray-500 text-sm">36px</span></h4>
-
-      <p class="p-md">Body Text <span class="text-gray-500 text-sm">20px</span></p>
-      <p class="p-sm">Small text <span class="text-gray-500 text-sm">18px</span></p>
-    </section>
-
-    <section id="typography" class="mt-20">
-      <h2 class="text-blue-500 text-lg uppercase font-bold tracking-wide mb-8">
-        UI Components
-      </h2>
-
-      <div>
-        <button class="btn btn-primary ">Small</button>
-        <button class="btn btn-secondary">Small
-          Secondary</button>
-      </div>
-      <div class="mt-12">
-        <button class="btn btn-primary btn-lg">Medium
-        </button>
-        <button class="btn btn-secondary btn-lg">Medium
-        </button>
-      </div>
-      <div class="mt-12">
-        <a href="#" class="link">
-          <span>Go to post
-          </span>
-          <svg class=" w-8 h-8 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-        </a>
-      </div>
-
-      <div class="mt-12">
-        <button class="btn btn-primary btn-icon hover:text-green-500">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-          </svg>
-          <span>Download</span>
-        </button>
-      </div>
-    </section>
-    </section>
-  </main>
+    </div>
+  </header>
 </body>
 
 </html>

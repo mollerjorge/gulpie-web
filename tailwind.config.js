@@ -5,6 +5,16 @@ module.exports = {
   darkMode: false,
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+          lg: '1.5rem'
+        },
+        screens: {
+          lg: '1152px'
+        }
+      },
       colors: {
         turqoise: colors.cyan,
         gray: colors.blueGray,
@@ -15,9 +25,8 @@ module.exports = {
         }
       },
       borderRadius: {
-        medium: '0.312rem',
+        medium: '0.312rem'
       }
-
     },
     fontFamily: {
       inter: 'Inter, sans-serif'
@@ -26,7 +35,8 @@ module.exports = {
   variants: {
     extend: {
       opacity: ['disabled'],
-      pointerEvents: ['disabled']
+      pointerEvents: ['disabled'],
+      textColor: ['checked']
     }
   },
   plugins: []
