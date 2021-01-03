@@ -1,4 +1,7 @@
 @layer components { 
+  .switch {
+    @apply hidden md:flex;
+  }
   .switch > div:first-child {
     @apply pl-4 pr-2 py-3 bg-blue-100 rounded-tl-full rounded-bl-full;
   } 

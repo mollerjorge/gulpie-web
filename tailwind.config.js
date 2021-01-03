@@ -26,6 +26,9 @@ module.exports = {
       },
       borderRadius: {
         medium: '0.312rem'
+      },
+      boxShadow: {
+        drawer: '0 35px 60px -15px rgba(0, 0, 0, 0.3)'
       }
     },
     fontFamily: {
