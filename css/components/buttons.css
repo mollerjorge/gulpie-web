@@ -8,8 +8,13 @@
   .btn-secondary {
     @apply text-blue-500 bg-blue-100 hover:bg-blue-200;
   }
-  .btn-lg {
-    @apply py-5 px-20;
+  .btn-sm {
+    @apply p-3 text-sm;
+  }
+  @variants responsive {
+    .btn-lg {
+      @apply py-5 px-20 text-xl;
+    }
   }
   .link {
     @apply text-xl text-blue-500 flex items-center font-semibold;
@@ -18,15 +23,18 @@
     @apply ml-2;
   }
   .btn-icon {
-    @apply flex items-center
+    @apply flex items-center  justify-center;
   }
   .btn-icon svg {
     @apply w-8 h-8;
   }
+  .btn-sm.btn-icon svg {
+    @apply w-6 h-6;
+  }
   .btn-icon *:first-child {
     @apply mr-4;
   }
-  
+
   .link:active,
   .lnk:visited {
     @apply text-blue-700;
