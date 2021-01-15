@@ -1,3 +1,4 @@
 @import './base/typography.css';
 @import './components/buttons.css';
 @import './components/switches.css';
+@import './pages/home.css'

@@ -7,7 +7,7 @@
   h2,
   h3,
   h4 {
-    @apply text-black-dark font-bold leading-normal;
+    @apply text-black-dark font-bold leading-normal tracking-wide;
   }
 
   h1,
@@ -25,7 +25,7 @@
   }
 
   h2 {
-    @apply text-5xl;
+    @apply text-3xl md:text-5xl;
   }
 
   h3 {
@@ -37,7 +37,7 @@
   }
 
   p {
-    @apply text-black leading-8 mb-4;
+    @apply text-black leading-8 mb-4 text-sm md:text-base;
   }
 }
 

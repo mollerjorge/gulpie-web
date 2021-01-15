@@ -5,6 +5,10 @@ module.exports = {
   darkMode: false,
   theme: {
     extend: {
+      spacing: {
+        '128': '32rem',
+        '160': '40rem',
+      },
       container: {
         center: true,
         padding: {
