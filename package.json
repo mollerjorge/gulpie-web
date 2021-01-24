@@ -12,6 +12,8 @@
   "author": "Jorge Moller",
   "license": "ISC",
   "dependencies": {
+    "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/line-clamp": "^0.2.0",
     "autoprefixer": "^10.0.4",
     "postcss": "^8.1.10",
     "postcss-cli": "^8.3.0",
