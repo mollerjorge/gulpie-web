@@ -4,8 +4,8 @@
   "description": "Tailwind from scratch course",
   "main": "index.js",
   "scripts": {
-    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
-    "watch": "postcss -w css/tailwind.css -o public/build/tailwind.css && live-server",
+    "build": "NODE_ENV=production postcss css/styles.css -o public/build/styles.css",
+    "watch": "postcss -w css/styles.css -o public/build/styles.css && live-server",
     "live": "live-server",
     "develop": "npm-run-all --parallel live watch"
   },
