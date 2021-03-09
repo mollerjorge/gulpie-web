@@ -23,7 +23,7 @@
     @apply ml-2;
   }
   .btn-icon {
-    @apply flex items-center  justify-center;
+    @apply flex items-center justify-center;
   }
   .btn-icon svg {
     @apply w-8 h-8;
