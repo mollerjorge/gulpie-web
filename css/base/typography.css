@@ -7,7 +7,23 @@
   h2,
   h3,
   h4 {
-    @apply text-black-dark font-bold leading-normal tracking-wide;
+    @apply font-inter text-black-dark leading-normal tracking-wide font-bold;
+  }
+
+  h1 {
+    @apply text-3xl md:text-7xl;
+  }
+
+  h2 {
+    @apply text-2xl md:text-5xl;
+  }
+
+  h3 {
+    @apply text-4xl;
+  }
+
+  h4 {
+    @apply text-xl;
   }
 
   h1,
@@ -20,33 +36,17 @@
     @apply mb-4;
   }
 
-  h1 {
-    @apply text-7xl;
-  }
-
-  h2 {
-    @apply text-3xl md:text-5xl;
-  }
-
-  h3 {
-    @apply text-4xl;
-  }
-
-  h4 {
-    @apply text-xl;
-  }
-
   p {
-    @apply text-black leading-8 mb-4 text-sm md:text-base;
+    @apply text-black text-sm md:text-base mb-4;
   }
 }
 
 @layer utilities {
-  .p-sm {
-    @apply text-lg;
-  }
-
   .p-md {
     @apply text-xl;
+  }
+
+  .p-sm {
+    @apply text-lg;
   }
 }

@@ -1,5 +1,9 @@
 # Changelog
 
+## 7.0.2
+
+- Reduced dependencies (by @ludofischer).
+
 ## 7.0.1
 
 - Moved to PostCSS 8.1.

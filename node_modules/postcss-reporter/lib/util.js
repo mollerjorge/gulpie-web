@@ -12,8 +12,8 @@ exports.getLocation = function(message) {
 
   if (!messageInput) return location;
 
-  var originLocation = messageInput.origin && messageInput.origin(message.line, message.column)
-  if (originLocation) return originLocation
+  var originLocation = messageInput.origin && messageInput.origin(message.line, message.column);
+  if (originLocation) return originLocation;
 
   location.file = messageInput.file || messageInput.id;
   return location;

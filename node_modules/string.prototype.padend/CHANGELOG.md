@@ -1,3 +1,11 @@
+3.1.2 / 2021-02-20
+=================
+  * [meta] do not publish github action workflow files
+  * [Deps] update `call-bind`, `es-abstract`
+  * [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `functions-have-names`, `has-strict-mode`, `tape`
+  * [actions] update workflows
+  * [Tests] increase coverage
+
 3.1.1 / 2020-11-21
 =================
   * [Deps] update `es-abstract`; use `call-bind` where applicable

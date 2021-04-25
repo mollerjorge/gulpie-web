@@ -1,7 +1,8 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: ['./*.html'],
+  mode: 'jit',
+  purge: ['./public/*.html'],
   darkMode: 'class',
   theme: {
     extend: {
@@ -32,7 +33,7 @@ module.exports = {
         },
         'dark-100': '#13151D',
         'dark-200': '#1F2129',
-        'dark-300': '#2B2D33',
+        'dark-300': '#2B2D33'
       },
       borderRadius: {
         medium: '0.312rem'

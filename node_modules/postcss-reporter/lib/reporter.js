@@ -16,12 +16,12 @@ module.exports = function(opts = {}) {
     // Every plugin
     pluginFilter = function() { return true; };
   } else if (opts.plugins.every(function(plugin) { return plugin[0] === '!'; })) {
-    // Blacklist
+    // Deny list
     pluginFilter = function(message) {
       return opts.plugins.indexOf('!' + message.plugin) === -1;
     };
   } else {
-    // Whitelist
+    // Allow list
     pluginFilter = function(message) {
       return opts.plugins.indexOf(message.plugin) !== -1;
     };
@@ -37,7 +37,7 @@ module.exports = function(opts = {}) {
         .filter(messageFilter);
 
       var resultSource = (!result.root.source) ? ''
-        : result.root.source.input.file || result.root.source.input.id
+        : result.root.source.input.file || result.root.source.input.id;
 
       var sourceGroupedMessages = groupBy(messagesToLog, message => {
         return util.getLocation(message).file || resultSource;

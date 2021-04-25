@@ -1,55 +1,39 @@
 @layer components {
   .btn {
-    @apply text-base text-center rounded py-4 px-10 font-semibold  select-none transition duration-300 ease-in-out;
+    @apply rounded-md text-center justify-center text-base font-semibold px-10 py-4 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-2  transition duration-300 ease-in-out;
   }
+
   .btn-primary {
-    @apply text-white bg-blue-500 hover:bg-blue-600;
+    @apply bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-900;
   }
+
   .btn-secondary {
-    @apply text-blue-500 bg-blue-100 hover:bg-blue-200 dark:bg-dark-200 dark:text-black;
+    @apply text-blue-500 bg-blue-100 hover:bg-blue-200 active:bg-blue-300 dark:bg-black-dark dark:text-black-light;
   }
-  .btn-sm {
-    @apply p-3 text-sm;
-  }
+
   @variants responsive {
     .btn-lg {
-      @apply py-5 px-20 text-xl;
+      @apply px-20 py-5 text-xl;
     }
   }
-  .link {
-    @apply text-xl text-blue-500 flex items-center font-semibold;
-  }
-  .link svg {
-    @apply ml-2;
-  }
+
   .btn-icon {
-    @apply flex items-center justify-center;
+    @apply flex items-center;
   }
-  .btn-icon svg {
+
+  .btn-icon > svg {
     @apply w-8 h-8;
   }
-  .btn-sm.btn-icon svg {
-    @apply w-6 h-6;
-  }
-  .btn-icon *:first-child {
-    @apply mr-4;
+
+  .btn-icon > *:first-child {
+    @apply mr-2;
   }
 
-  .link:active,
-  .lnk:visited {
-    @apply text-blue-700;
+  .link {
+    @apply text-xl text-blue-500 flex items-center active:text-blue-700 visited:text-blue-700;
   }
 
-  .btn-primary:active {
-    @apply bg-blue-700;
-  }
-  .btn-secondary:active {
-    @apply bg-blue-300;
-  }
-  .btn:disabled {
-    @apply opacity-50 pointer-events-none;
-  }
-  .btn:focus {
-    @apply outline-none ring-4;
+  .link > svg {
+    @apply w-8 h-8 ml-2;
   }
 }

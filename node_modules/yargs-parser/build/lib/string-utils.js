@@ -1,5 +1,10 @@
 export function camelCase(str) {
-    str = str.toLocaleLowerCase();
+    // Handle the case where an argument is provided as camel case, e.g., fooBar.
+    // by ensuring that the string isn't already mixed case:
+    const isCamelCase = str !== str.toLowerCase() && str !== str.toUpperCase();
+    if (!isCamelCase) {
+        str = str.toLocaleLowerCase();
+    }
     if (str.indexOf('-') === -1 && str.indexOf('_') === -1) {
         return str;
     }
@@ -15,7 +20,6 @@ export function camelCase(str) {
             }
             if (i !== 0 && (chr === '-' || chr === '_')) {
                 nextChrUpper = true;
-                continue;
             }
             else if (chr !== '-' && chr !== '_') {
                 camelcase += chr;
