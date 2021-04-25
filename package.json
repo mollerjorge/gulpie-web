@@ -1,7 +1,7 @@
 {
-  "name": "tailwind-from-scratch-course",
+  "name": "gulpie",
   "version": "1.0.0",
-  "description": "Tailwind from scratch course",
+  "description": "Gulpie",
   "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=production postcss css/styles.css -o public/css/styles.css",
