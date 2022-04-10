@@ -7,9 +7,7 @@
 3. Open up your terminal and cd into the gulpie project (the one you just downloaded and uncompressed).
 
 ### Install dependencies with: 
-`npm run install`
+`npm install`
 
 ### Fire up the server with:
-`
-  npm run develop
-`
+`npm run develop`
